@@ -1,8 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://bb00c35sariat"]
+[gd_scene load_steps=3 format=3 uid="uid://bb00c35sariat"]
 
+[ext_resource type="Script" path="res://scenes/main/main.gd" id="1_i0yns"]
 [ext_resource type="PackedScene" uid="uid://cd1ceww8u414g" path="res://scenes/paddle/paddle.tscn" id="1_s8jpt"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_i0yns")
 
-[node name="Paddle" parent="." instance=ExtResource("1_s8jpt")]
+[node name="Player1" parent="." instance=ExtResource("1_s8jpt")]
 position = Vector2(906, 460)
+
+[node name="Player2" parent="." instance=ExtResource("1_s8jpt")]
+position = Vector2(1150, 457)
