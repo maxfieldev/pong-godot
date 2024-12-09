@@ -9,7 +9,8 @@ size = Vector2(14, 83)
 script = ExtResource("1_ik01x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 40)
 shape = SubResource("RectangleShape2D_wdlbh")
 
 [node name="Line2D" type="Line2D" parent="."]
-points = PackedVector2Array(0, 0, 0, 400)
+points = PackedVector2Array(0, 0, 0, 80)

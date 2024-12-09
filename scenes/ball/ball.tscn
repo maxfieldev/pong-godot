@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dv0atlnumf0f6"]
+
+[ext_resource type="Script" path="res://scenes/ball/ball.gd" id="1_womp2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_37i5c"]
+
+[node name="Ball" type="Area2D"]
+script = ExtResource("1_womp2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_37i5c")
+
+[node name="Line2D" type="Line2D" parent="."]
