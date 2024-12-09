@@ -2,6 +2,7 @@ extends Node2D
 
 @onready var player1: Paddle = $Player1
 @onready var player2: Paddle = $Player2
+@onready var ball: Ball = $Ball
 
 const PADDLE_SPACING_FROM_EDGE: float = 100
 
@@ -10,6 +11,7 @@ func _ready() -> void:
 	var screen_size: Vector2 = get_viewport_rect().size
 	player1.position = Vector2(PADDLE_SPACING_FROM_EDGE, screen_size.y/2)
 	player2.position = Vector2(screen_size.x-PADDLE_SPACING_FROM_EDGE, screen_size.y/2)
+	ball.position = Vector2(screen_size.x/2, screen_size.y/2)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
@@ -18,3 +20,5 @@ func _physics_process(delta: float) -> void:
 	
 	var player2_dir: float = Input.get_axis("player2_up", "player2_down")
 	player2.update(player2_dir, delta)
+	
+	ball.update(delta)

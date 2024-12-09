@@ -1,12 +1,12 @@
 extends Area2D
 class_name Paddle
 
-const HEIGHT: int = 80
-const WIDTH: int = 10
-const PADDLE_COLLISION_BUFFER: int = 3
+const HEIGHT: float = 80
+const WIDTH: float = 10
+const PADDLE_COLLISION_BUFFER: float = 3
 # One-bit monitor glow palette white color
 const PADDLE_COLOR: Color = Color(0.94, 0.96, 0.94, 1.0)
-const SPEED: float = 400
+const SPEED: float = 800
 
 var screen_size: Vector2
 
