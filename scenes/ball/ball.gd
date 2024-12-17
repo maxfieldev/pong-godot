@@ -19,9 +19,7 @@ func _ready() -> void:
 	_configureLine2D()
 	_configureCollisionShape2D()
 	screen_size = get_viewport_rect().size
-	speed = START_SPEED
-	direction = Vector2([-1, 1].pick_random(), randf_range(-1, 1))
-	direction = direction.normalized()
+	direction.x = [-1, 1].pick_random()
 	area_entered.connect(_on_paddle_collision)
 
 func _configureLine2D() -> void:
@@ -63,3 +61,9 @@ func _on_paddle_collision(paddle: Area2D):
 	
 func _ball_scored() -> bool:
 	return position.x < -WIDTH || position.x > screen_size.x+WIDTH
+
+func reset() -> void:
+	position = Vector2(screen_size.x/2, screen_size.y/2)
+	speed = START_SPEED
+	direction.y = randf_range(-1, 1)
+	direction = direction.normalized()
