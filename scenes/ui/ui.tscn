@@ -1,0 +1,65 @@
+[gd_scene load_steps=3 format=3 uid="uid://bc4h3y2jko7up"]
+
+[ext_resource type="Theme" uid="uid://c4megpc15rih8" path="res://scenes/ui/main_theme.tres" id="1_6ggju"]
+[ext_resource type="Script" path="res://scenes/ui/ui.gd" id="2_gpgdr"]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_6ggju")
+script = ExtResource("2_gpgdr")
+
+[node name="Scores" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.25
+offset_right = -0.320004
+
+[node name="Player1Score" type="Label" parent="Scores"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "0
+"
+
+[node name="Player2Score" type="Label" parent="Scores"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "0
+"
+
+[node name="MessageMenu" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -153.0
+offset_right = 20.0
+offset_bottom = 153.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="MessageMenu"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "GAME OVER"
+
+[node name="Subtitle" type="Label" parent="MessageMenu"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 75
+text = "Player 1 WINS!!"
+
+[node name="RestartGameMessage" type="Label" parent="MessageMenu"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 50
+text = "Press r to restart the game
+"
