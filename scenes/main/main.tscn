@@ -20,3 +20,5 @@ position = Vector2(960, 540)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="UI" parent="CanvasLayer" instance=ExtResource("4_tgxta")]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
