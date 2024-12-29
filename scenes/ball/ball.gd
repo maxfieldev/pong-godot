@@ -1,6 +1,8 @@
 extends Area2D
 class_name Ball
 
+@onready var audio_player: AudioStreamPlayer2D = $AudioStreamPlayer2D
+
 const HEIGHT: float = 10
 const WIDTH: float = 10
 # One-bit monitor glow palette white color
@@ -11,6 +13,7 @@ const SPEED_INCREASE_ON_HIT: float = 1.05
 var direction: Vector2
 var speed: float
 var screen_size: Vector2
+var pong_hit_sound: AudioStream = preload("res://scenes/ball/pong_hit.wav")
 
 signal scored
 
@@ -21,6 +24,7 @@ func _ready() -> void:
 	screen_size = get_viewport_rect().size
 	direction.x = [-1, 1].pick_random()
 	area_entered.connect(_on_paddle_collision)
+	audio_player.stream = pong_hit_sound
 
 func _configureLine2D() -> void:
 	var line2D: Line2D = $Line2D
@@ -40,6 +44,7 @@ func _configureCollisionShape2D() -> void:
 func update(delta: float) -> void:
 	if _did_collide_with_wall():
 		direction.y = -direction.y
+		audio_player.play()
 	position += direction * speed * delta
 	if _ball_scored():
 		emit_signal("scored")
@@ -58,6 +63,7 @@ func _on_paddle_collision(paddle: Area2D):
 	collision_diff = clampf(collision_diff, -1, 1)
 	direction.y = collision_diff
 	direction = direction.normalized()
+	audio_player.play()
 	
 func _ball_scored() -> bool:
 	return position.x < -WIDTH || position.x > screen_size.x+WIDTH
