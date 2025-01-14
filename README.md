@@ -1,12 +1,9 @@
-# Pong in Godot 4
-This repository contains a Pong project made as part of a YouTube tutorial series. Links to each video and their start and end files are contained in this README.
+# Part 2: Paddle Movement
 
-## Part 1: Project Setup & Paddle Creation
+This branch contains the Pong project at the end of part 2. In this video, we:
 
-[YouTube video](https://youtu.be/HV1RHJt_G90)
+- Added a second paddle
+- Gave both paddles some movement
+- Scaled our game with window resizing
 
-### Starting files
-- None! We start with an empty godot project :)
-
-### End files
-- Source: https://github.com/maxfieldev/pong-godot/tree/part1
+[Follow along with the video here on YouTube](https://youtu.be/fXTdQZSSGU0)
