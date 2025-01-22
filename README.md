@@ -1,4 +1,4 @@
-# Part 2: Adding the Ball
+# Part 3: Adding the Ball
 
 This branch contains the Pong project at the end of part 3. In this video, we:
 
