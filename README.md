@@ -21,3 +21,14 @@ This repository contains a Pong project made as part of a YouTube tutorial serie
 
 ### End files
 - Source: https://github.com/maxfieldev/pong-godot/tree/part2
+
+## Part 3: Adding the Ball
+
+[YouTube video](https://www.youtube.com/watch?v=CykswxSLn5A)
+
+### Starting files
+- Zip: https://github.com/maxfieldev/pong-godot/blob/starter_zips/part3/pong-lesson-p3-starter.zip
+- Source: https://github.com/maxfieldev/pong-godot/tree/part2
+
+### End files
+- Source: https://github.com/maxfieldev/pong-godot/tree/part3
