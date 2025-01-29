@@ -1,4 +1,4 @@
-# Part 3: Adding the Ball
+# Part 4: Scoring & Game States
 
 This branch contains the Pong project at the end of part 4. In this video, we:
 
