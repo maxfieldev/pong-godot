@@ -32,3 +32,15 @@ This repository contains a Pong project made as part of a YouTube tutorial serie
 
 ### End files
 - Source: https://github.com/maxfieldev/pong-godot/tree/part3
+
+## Part 4: Scoring & Game States
+
+[YouTube video](https://www.youtube.com/watch?v=DuVBUv8D1xk)
+
+### Starting files
+- Zip: https://github.com/maxfieldev/pong-godot/blob/starter_zips/part4/pong-lesson-p4-starter.zip
+- Source: https://github.com/maxfieldev/pong-godot/tree/part3
+
+### End files
+- Source: https://github.com/maxfieldev/pong-godot/tree/part4
+  
