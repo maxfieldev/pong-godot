@@ -43,4 +43,15 @@ This repository contains a Pong project made as part of a YouTube tutorial serie
 
 ### End files
 - Source: https://github.com/maxfieldev/pong-godot/tree/part4
-  
+
+## Part 5: Adding the UI
+
+[YouTube video](https://www.youtube.com/watch?v=zHTVDWSnLOo)
+
+### Starting files
+- Font file: https://github.com/maxfieldev/pong-godot/blob/starter_zips/part5/pong_font.ttf
+- Zip: https://github.com/maxfieldev/pong-godot/blob/starter_zips/part5/pong-lesson-p5-starter.zip
+- Source: https://github.com/maxfieldev/pong-godot/tree/part4
+
+### End files
+- Source: https://github.com/maxfieldev/pong-godot/tree/part5
