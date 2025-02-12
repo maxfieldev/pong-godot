@@ -55,3 +55,20 @@ This repository contains a Pong project made as part of a YouTube tutorial serie
 
 ### End files
 - Source: https://github.com/maxfieldev/pong-godot/tree/part5
+
+## Part 6: Audio & Touchup
+
+[YouTube video](https://youtu.be/MJqBjBTPNs0)
+
+### Starting files
+- Audio files:
+  - https://github.com/maxfieldev/pong-godot/blob/starter_zips/part6/pong_hit.wav
+  - https://github.com/maxfieldev/pong-godot/blob/starter_zips/part6/pong_score.wav
+  - https://github.com/maxfieldev/pong-godot/blob/starter_zips/part6/pong_win.wav
+
+- Zip: https://github.com/maxfieldev/pong-godot/blob/starter_zips/part6/pong-lesson-p6-starter.zip
+
+- Source: https://github.com/maxfieldev/pong-godot/tree/part5
+
+### End files
+- Source: This main branch :)
